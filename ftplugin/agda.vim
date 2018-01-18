@@ -115,7 +115,7 @@ function! s:LogAgda(name, text, append)
 endfunction
 
 
-exec s:python_until_eof
+python <<EOF
 import vim
 import re
 import subprocess
